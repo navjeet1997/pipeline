@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    agent { any { image 'python:3.5.1' } }
     stages {
         stage('build') {
             steps {
@@ -8,4 +8,4 @@ pipeline {
         }
     }
 }
-JENKINSFILE
+
