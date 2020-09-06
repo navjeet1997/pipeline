@@ -6,7 +6,6 @@ pipeline {
         sh 'pip install -r requirements.txt'
       }
     }
-    stages {
         stage('Test'){
             steps {
                 sh "python main.py"
@@ -15,4 +14,3 @@ pipeline {
     }
    
  }
-}
