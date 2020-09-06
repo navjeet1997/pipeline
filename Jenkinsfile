@@ -3,7 +3,7 @@ pipeline {
         any { image 'python:3' }
     }
     stages {
-        stage('buld') {
+        stage('build') {
             steps {
                 script{
                     withPythonEnv('python') {
