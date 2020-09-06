@@ -1,1 +1,5 @@
-return ("hello worrld")
+def hello():
+  
+  return ("hello worrld")
+
+hello()
