@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                withEnv(['PATH+EXTRA=/usr/local/bin']) {  
-          	sh 'which python3' 
+             withEnv(['Ra=/usr/local/bin']) {  
+          	sh 'which $Ra/python3' 
         	}
             }
         }
