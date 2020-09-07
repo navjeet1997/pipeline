@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-             sh 'echo $Path'
+             sh 'echo $PATH'
             }
         }
     }
