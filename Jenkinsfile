@@ -5,9 +5,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-             withEnv(['Ra=/usr/bin']) {  
-          	sh '$Ra/python main.py' 
-        	}
+             sh """
+    . .env/bin/activate
+    pip3 install -r requirement.txt
+    """
             }
         }
     }
