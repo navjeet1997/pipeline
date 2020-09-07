@@ -8,7 +8,7 @@ pipeline {
                 script{
                     
 	
-	                sh 'which python'
+	                sh 'which python3'
                     
                 }
             }
