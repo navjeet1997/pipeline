@@ -5,12 +5,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                script{
-                    
-	
-	                sh 'which python3'
-                    
-                }
+                withEnv(['PATH+EXTRA=/usr/local/bin']) {  
+          	sh 'which python3' 
+        	}
             }
         }
     }
