@@ -1,12 +1,12 @@
 pipeline {
     agent {
-        any { image 'python:3' }
+        any { image 'python:3.8' }
     }
     stages {
         stage('build') {
             steps {
                 script{
-                    withPythonEnv('python3') {
+                    withPythonEnv('/usr/local/bin/python3.8') {
 	
 	                sh 'pip3 install -r requirements.txt'
                     }
