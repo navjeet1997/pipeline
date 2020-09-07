@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
              withEnv(['Ra=/usr/bin']) {  
-          	sh 'which $Ra/python' 
+          	sh '$Ra/python main.py' 
         	}
             }
         }
