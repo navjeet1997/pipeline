@@ -5,10 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-             sh """
-    . .env/bin/activate
-    pip3 install -r requirement.txt
-    """
+             sh 'echo $path'
             }
         }
     }
