@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 script{
-                    withPythonEnv('pyth') {
+                    withPythonEnv('python') {
 	
 	                sh 'pip3 install -r requirements.txt'
                     }
